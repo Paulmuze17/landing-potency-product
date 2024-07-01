@@ -143,7 +143,6 @@ input {
   font-size: 56px;
   line-height: 130%;
   letter-spacing: 0;
-  text-shadow: 0 4px 18px #000;
 }
 
 .title-main--accent {
@@ -163,7 +162,7 @@ input {
 
 .section-promo__title {
   max-width: 648px;
-  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
 }
 
 .section-promo__list-wapper {
@@ -173,7 +172,7 @@ input {
 .section-promo__list {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 18px;
   margin-bottom: 46px;
   list-style-type: "✔";
 }
@@ -261,7 +260,7 @@ input {
 }
 
 .section-features__button {
-  border-radius: 40px;
+  border-radius: 20px;
   padding: 24px 52px;
   box-shadow: var(--box-shadow-second);
 }
@@ -552,11 +551,15 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 50px;
-  padding: 30px 20px;
-  box-shadow: var(--box-shadow-second);
-  background-color: #fff;
-  background-color: red;
+  justify-content: center;
+  padding: 16px;
+  /* width: 30%; */
+  aspect-ratio : 1 / 1;
+  /* background-color: #fff; */
+  /* background-color: red; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .section-order__price-full {
@@ -749,10 +752,7 @@ input {
   .section-order__price-wrapper {
     top: 0;
     right: 0;
-  }
-
-  .section-order__price-wrapper {
-    padding: 10px 20px;
+    /* width: 60%; */
   }
 
   .section-order__input {
