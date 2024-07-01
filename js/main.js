@@ -56,27 +56,10 @@ $(document).ready(function() {
 
 
 
-  var $marquee = $(".marquee");
-  var width = $marquee.width();
-  var containerWidth = $marquee.parent().width();
-  var duration = 10000; // Время движения строки в миллисекундах
-
-  function startMarquee() {
-    $marquee.animate(
-      {
-        left: -width
-      },
-      duration,
-      "linear",
-      function() {
-        $marquee.css("left", containerWidth);
-        startMarquee();
-      }
-    );
-  }
-
-  startMarquee();
-
+  $('.section-order__input-number').on('input', function() {
+    var value = $(this).val().replace(/\D/g, '');
+    $(this).val(value);
+  });
 
 
   var carouselWrapper = $('.carousel-wrapper');
